@@ -1,7 +1,7 @@
 # ベンチマークテストのログをGitHubで管理する
 ## 1. やること
 ### 以下の3つの環境でベンチマークを行う
-- physical machine(Linux)
+- Physical Machine(Linux)
 - KVM
 - Docker
 

@@ -1,0 +1,5 @@
+#stream	物理マシン	KVM
+RandomRead	33849	359298
+RandomWrtite	9041	31764
+SequentialRead		32163	396899
+SequentialWrite		8046	32163

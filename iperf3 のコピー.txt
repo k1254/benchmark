@@ -1,0 +1,9 @@
+#iiperf tcp udp
+KVM(ゲスト)Toホスト 14.900 1.05
+ホストToKVM(ゲスト) 13.600 1.05
+
+KVMTo他の物理マシン  0.944 1.05 
+他の物理マシンToKVM  0.941 1.05
+
+
+Gb/sec  , Mb/sec

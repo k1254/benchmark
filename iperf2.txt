@@ -1,0 +1,6 @@
+#iiperf(Gb/sec) tcp udp
+Guest2Host 14.900 0.00105
+Host2Guest 13.600 0.00105
+
+Guest2Another 0.944 0.00105 
+Another2KVM  0.941 0.00105

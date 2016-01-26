@@ -1,0 +1,990 @@
+/Users/e125754% ssh ukawa@10.50.0.169                                                            [ ~]
+ukawa@10.50.0.169's password: 
+Welcome to Ubuntu 14.04.3 LTS (GNU/Linux 3.13.0-24-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Tue Jan 26 15:46:26 JST 2016
+
+  System load:  0.94                Processes:          157
+  Usage of /:   19.2% of 142.66GB   Users logged in:    0
+  Memory usage: 3%                  IP address for br0: 10.50.0.169
+  Swap usage:   0%
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+Last login: Tue Jan 26 15:03:38 2016 from 10.10.7.103
+ukawa@tigerex%                                                                                   [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                          [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696        217       3479          0         14         96
+-/+ buffers/cache:        105       3590
+Swap:         3835          0       3835
+Total:        7532        217       7315
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696        219       3477          0         14        100
+-/+ buffers/cache:        104       3592
+Swap:         3835          0       3835
+Total:        7532        219       7313
+ukawa@tigerex% virsh start test1                                                                                    [ ~]
+Domain test1 started
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ -     test2                          shut off
+ -     test3                          shut off
+ -     test4                          shut off
+ -     test5                          shut off
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       1075       2621          0         15        384
+-/+ buffers/cache:        676       3020
+Swap:         3835          0       3835
+Total:        7532       1075       6456
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       1066       2630          0         15        384
+-/+ buffers/cache:        666       3030
+Swap:         3835          0       3835
+Total:        7532       1066       6466
+ukawa@tigerex% virsh start test2                                                                                    [ ~]
+Domain test2 started
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ -     test3                          shut off
+ -     test4                          shut off
+ -     test5                          shut off
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       1948       1748          0         15        665
+-/+ buffers/cache:       1267       2429
+Swap:         3835          0       3835
+Total:        7532       1948       5584
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       1895       1801          1         15        668
+-/+ buffers/cache:       1211       2485
+Swap:         3835          0       3835
+Total:        7532       1895       5637
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       1895       1801          1         15        668
+-/+ buffers/cache:       1211       2485
+Swap:         3835          0       3835
+Total:        7532       1895       5637
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ -     test3                          shut off
+ -     test4                          shut off
+ -     test5                          shut off
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       1839       1857          1         15        668
+-/+ buffers/cache:       1155       2541
+Swap:         3835          0       3835
+Total:        7532       1839       5693
+ukawa@tigerex% virsh start test3                                                                                    [ ~]
+Domain test3 started
+
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ -     test4                          shut off
+ -     test5                          shut off
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ -     test4                          shut off
+ -     test5                          shut off
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       2653       1042          1         15        949
+-/+ buffers/cache:       1688       2007
+Swap:         3835          0       3835
+Total:        7532       2653       4878
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       2655       1040          1         15        949
+-/+ buffers/cache:       1690       2005
+Swap:         3835          0       3835
+Total:        7532       2655       4876
+ukawa@tigerex% virsh start test4                                                                                    [ ~]
+Domain test4 started
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ -     test5                          shut off
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3487        208          1         15       1204
+-/+ buffers/cache:       2267       1428
+Swap:         3835          0       3835
+Total:        7532       3487       4044
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3486        209          1         15       1204
+-/+ buffers/cache:       2266       1429
+Swap:         3835          0       3835
+Total:        7532       3486       4045
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3486        209          1         15       1204
+-/+ buffers/cache:       2266       1429
+Swap:         3835          0       3835
+Total:        7532       3486       4045
+ukawa@tigerex% virsh start test5                                                                                    [ ~]
+Domain test5 started
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3556        140          1          7        708
+-/+ buffers/cache:       2840        856
+Swap:         3835          2       3833
+Total:        7532       3558       3974
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3556        140          1          7        708
+-/+ buffers/cache:       2839        856
+Swap:         3835          2       3833
+Total:        7532       3558       3974
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3556        140          1          7        708
+-/+ buffers/cache:       2839        856
+Swap:         3835          2       3833
+Total:        7532       3558       3974
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3552        144          1          7        708
+-/+ buffers/cache:       2836        860
+Swap:         3835          2       3833
+Total:        7532       3554       3978
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3549        146          1          7        708
+-/+ buffers/cache:       2832        863
+Swap:         3835          2       3833
+Total:        7532       3551       3980
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3528        167          1          7        708
+-/+ buffers/cache:       2812        884
+Swap:         3835          2       3833
+Total:        7532       3531       4001
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3529        166          1          7        708
+-/+ buffers/cache:       2812        883
+Swap:         3835          2       3833
+Total:        7532       3532       4000
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ -     test6                          shut off
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% virsh start test6                                                                                    [ ~]
+Domain test6 started
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ 7     test6                          running
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3530        166          1          3        207
+-/+ buffers/cache:       3319        376
+Swap:         3835          5       3830
+Total:        7532       3536       3996
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3519        176          1          3        211
+-/+ buffers/cache:       3305        391
+Swap:         3835          5       3830
+Total:        7532       3525       4007
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3516        179          1          3        211
+-/+ buffers/cache:       3302        394
+Swap:         3835          5       3830
+Total:        7532       3522       4009
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ 7     test6                          running
+ -     test7                          shut off
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% virsh start test7                                                                                    [ ~]
+Domain test7 started
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ 7     test6                          running
+ 8     test7                          running
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% virsh list --all                                                                                     [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ 7     test6                          running
+ 8     test7                          running
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3590        105          1          2        165
+-/+ buffers/cache:       3422        274
+Swap:         3835        714       3121
+Total:        7532       4305       3227
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3582        114          1          1        143
+-/+ buffers/cache:       3438        258
+Swap:         3835        812       3023
+Total:        7532       4395       3137
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3582        114          1          1        143
+-/+ buffers/cache:       3438        258
+Swap:         3835        812       3023
+Total:        7532       4395       3137
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3582        114          1          1        143
+-/+ buffers/cache:       3438        258
+Swap:         3835        812       3023
+Total:        7532       4395       3137
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3582        114          1          1        143
+-/+ buffers/cache:       3438        258
+Swap:         3835        812       3023
+Total:        7532       4395       3137
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3586        110          1          1        143
+-/+ buffers/cache:       3441        254
+Swap:         3835        812       3023
+Total:        7532       4399       3133
+ukawa@tigerex% free -tm                                                                                             [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3585        110          1          1        143
+-/+ buffers/cache:       3441        255
+Swap:         3835        812       3023
+Total:        7532       4398       3134
+ukawa@tigerex% virsh sta                                                                                            [ ~]
+error: unknown command: 'sta'
+ﾟД ﾟﾊｧ? % virsh list --all                                                                                 [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ 7     test6                          running
+ 8     test7                          running
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex% virsh start test8                                                                                    [ ~]
+error: Failed to start domain test8
+error: internal error: process exited while connecting to monitor: Cannot set up guest memory 'pc.ram': Cannot allocate memory
+
+
+ﾟД ﾟﾊｧ? % free -tm                                                                                         [ ~]
+             total       used       free     shared    buffers     cached
+Mem:          3696       3576        120          1          1        142
+-/+ buffers/cache:       3431        265
+Swap:         3835        812       3023
+Total:        7532       4388       3143
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ukawa@tigerex% viarsh li                                                                                            [ ~]
+zsh: command not found: viarsh
+ﾟД ﾟﾊｧ? % virsh list --all                                                                                 [ ~]
+ Id    Name                           State
+----------------------------------------------------
+ 2     test1                          running
+ 3     test2                          running
+ 4     test3                          running
+ 5     test4                          running
+ 6     test5                          running
+ 7     test6                          running
+ 8     test7                          running
+ -     test8                          shut off
+ -     test9                          shut off
+ -     ubuntu14                       shut off
+
+ukawa@tigerex%                                                                                                      [ ~]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

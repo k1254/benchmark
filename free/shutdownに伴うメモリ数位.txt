@@ -1,0 +1,68 @@
+VM7から1台ずつshutdown
+(7台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       3053        643          1         75        933
+-/+ buffers/cache:       2043       1652
+Swap:         3835        669       3166
+Total:        7532       3722       3809
+
+
+(6台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       2878        818          1         75        937
+-/+ buffers/cache:       1864       1831
+Swap:         3835        664       3171
+Total:        7532       3542       3990
+
+
+(5台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       2684       1011          1         75        942
+-/+ buffers/cache:       1666       2030
+Swap:         3835        652       3183
+Total:        7532       3337       4195
+
+
+(4台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       2453       1242          1         75        948
+-/+ buffers/cache:       1430       2266
+Swap:         3835        516       3319
+Total:        7532       2970       4562
+
+
+(3台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       2126       1570          1         75        953
+-/+ buffers/cache:       1097       2599
+Swap:         3835        250       3585
+Total:        7532       2377       5155
+
+
+
+
+(2台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       1893       1803          1         75        958
+-/+ buffers/cache:        859       2837
+Swap:         3835        158       3677
+Total:        7532       2051       5481
+
+
+
+
+(1台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       1699       1997          1         75        963
+-/+ buffers/cache:        660       3036
+Swap:         3835         82       3753
+Total:        7532       1781       5750
+
+
+
+(0台起動中)
+             total       used       free     shared    buffers     cached
+Mem:          3696       1196       2500          1         75        968
+-/+ buffers/cache:        152       3544
+Swap:         3835          5       3830
+Total:        7532       1201       6331

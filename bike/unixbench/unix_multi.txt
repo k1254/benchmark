@@ -1,0 +1,4 @@
+#unixbench_MultiThread
+LinuxMachine	3331.9
+KVM	4408.5
+Docker	2767.6

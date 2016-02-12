@@ -1,0 +1,4 @@
+#himenobench MFLOPS measured :
+LinuxMachine	2594.993244
+KVM	2063.094986
+Docker 	2533.722321

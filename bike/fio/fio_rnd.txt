@@ -1,0 +1,3 @@
+		Linux	KVM	Docker
+rnd-read	20665	20905	20662
+rnd-write	12210	11230	12821

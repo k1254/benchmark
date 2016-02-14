@@ -1,0 +1,10 @@
+linux docker stream差
+single
+linux-docker	linux-kvm
+33.2		
+13.8		
+-2.1		
+32.7
+
+sed -e '1d' stream_multi.txt | awk '{print 100 -($4/$2*100)}'
+こんな感じでawkに計算してもらうことができる

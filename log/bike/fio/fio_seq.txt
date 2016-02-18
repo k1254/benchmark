@@ -1,0 +1,3 @@
+(KB/s)		Linux		KVM		Docker
+seq-read	188871.19	175026.42	188511.94
+seq-write	145267.77	73093.91	145344.45
